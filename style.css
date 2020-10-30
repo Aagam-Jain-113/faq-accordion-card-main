@@ -1,0 +1,67 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(to bottom, #af67e9, #6565e7) center no-repeat;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;   
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: hsl(238, 29%, 16%); 
+}
+
+.card{
+    min-width: 75%;
+    min-height: 550px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-radius: 30px;   
+    margin-left: auto;
+    margin-right: auto; 
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.desktop{
+    position: relative;
+    height: 40%;
+    width: 50%;
+    left: -10%;
+    top: 40%;
+}
+
+.bg{
+    position: absolute;
+    width: 50%;
+    left: -10%;
+    top: 0%;
+    overflow: hidden;
+}
+
+.list{
+    position: absolute;
+    left: 55%;
+    top: 30%;
+    font-size: 20px;
+}
+
+hr{
+    min-width: 50%;
+
+}
+.answer{
+    display: none;
+}
+
+.attribution{
+    position: relative;
+   
+}
+
