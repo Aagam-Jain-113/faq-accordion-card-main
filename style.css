@@ -19,8 +19,8 @@ body{
 }
 
 .card{
-    min-width: 80%;
-    min-height: 550px;
+    position: relative;
+    max-width: 80%;
     background: white;
     display: flex;
     flex-direction: column;
@@ -28,8 +28,8 @@ body{
     border-radius: 30px;   
     margin-left: auto;
     margin-right: auto;
-    margin-top: -7%;
-    margin-bottom: 10%; 
+    margin-top: -12%;
+    margin-bottom: 5%; 
     background-image: url(images/bg-pattern-desktop.svg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -59,31 +59,28 @@ body{
 }
 
 .list{
-    position: absolute;
-    left: 43rem;
-    top: 10rem;
     font-size: 1.25rem;
+    padding: 1rem;
 }
 
 hr{
     line-height: 2rem;
     color: #e7e7e9;
-    width: 24rem;
     border-top: .5px solid;
 }
 
 .answer{
     display: none;
-    width: 24rem;
     margin-top: 0.6rem;
-    color: gray;
-    font-size: .8rem;
+    color: #444;
+    font-size: .875rem;
     margin-bottom: 1rem;
 }
 
 .question{  
     font-size: 1rem;
     margin: 1.2rem auto 1.2rem auto;
+    padding-right: 1rem;
 }
 
 .question:hover{
@@ -92,27 +89,25 @@ hr{
 }
 
 .down-arrow {
-    position: relative;
-    float: right;
     height: 0.5rem;
     width: auto;
     transition: all 0.25s ease 0s;
+    position: absolute;
+    right: 1rem;
 }
 
 .attribution{
-    position: relative;
-    top: 33rem;
     margin-left: auto;
     margin-right: auto;
 }
 
-@media screen and (max-width: 1023px ){
+@media screen and (max-width: 1023px){
     .mobile{
         display: flex;
         margin-left: auto;
         margin-right: auto;
         width: 50%;
-        margin-top: -20%;
+        margin-top: -12%;
         align-items: center;
     }
     .desktop,.box{
@@ -124,30 +119,8 @@ hr{
     .card{
         margin-top: 10%;
     }
-    .list{
-        left: auto;
-        right: auto;
-        text-align: center;
-        margin-top: 10%;
-    }
     h1{
-        margin-bottom: -1rem;
-        font-size: 1.5rem;
-    }
-    .attribution{
-        top: 25rem;
-    }
-    hr{
-        width: 20rem;
-    }
-    .answer{
-        width: 20rem;
-    }
-}
-
-@media screen and (max-width: 600px){
-    .attribution{
-        top: 28.5rem;
+        text-align: center;
     }
 }
 
