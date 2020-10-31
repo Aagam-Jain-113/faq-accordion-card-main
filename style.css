@@ -5,18 +5,21 @@
 }
 
 body{
-    background: linear-gradient(to bottom, #af67e9, #6565e7) center no-repeat;
+    background: linear-gradient(to bottom, #af67e9, #6565e7);
+    background-repeat: no-repeat;
     display: flex;
     min-height: 100vh;
     flex-direction: column;   
+    justify-content: center;
+    align-items: center;
     font-family: 'Kumbh Sans', sans-serif;
-    font-size: 12px;
+    font-size: .75rem;
     font-weight: 400;
     color: hsl(238, 29%, 16%); 
 }
 
 .card{
-    min-width: 75%;
+    min-width: 80%;
     min-height: 550px;
     background: white;
     display: flex;
@@ -24,44 +27,127 @@ body{
     justify-content: flex-start;
     border-radius: 30px;   
     margin-left: auto;
-    margin-right: auto; 
-    margin-top: auto;
-    margin-bottom: auto;
+    margin-right: auto;
+    margin-top: -7%;
+    margin-bottom: 10%; 
+    background-image: url(images/bg-pattern-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -35rem -1.8rem;
+    box-shadow: 0 1px 25px 0 #4a4b5e;
+}
+
+.box{
+    position: relative;
+    top: 21rem;
+    left: -34rem;
+    width: 15%;
+    z-index: 999;
 }
 
 .desktop{
-    position: relative;
-    height: 40%;
-    width: 50%;
-    left: -10%;
-    top: 40%;
+    position: absolute;
+    height: 55%;
+    width: 35%;
+    left: 7%; 
+    top: 38%;
+    display: block;
 }
 
-.bg{
-    position: absolute;
-    width: 50%;
-    left: -10%;
-    top: 0%;
-    overflow: hidden;
+.mobile{
+    display: none;
 }
 
 .list{
     position: absolute;
-    left: 55%;
-    top: 30%;
-    font-size: 20px;
+    left: 43rem;
+    top: 10rem;
+    font-size: 1.25rem;
 }
 
 hr{
-    min-width: 50%;
-
+    line-height: 2rem;
+    color: #e7e7e9;
+    width: 24rem;
+    border-top: .5px solid;
 }
+
 .answer{
     display: none;
+    width: 24rem;
+    margin-top: 0.6rem;
+    color: gray;
+    font-size: .8rem;
+    margin-bottom: 1rem;
+}
+
+.question{  
+    font-size: 1rem;
+    margin: 1.2rem auto 1.2rem auto;
+}
+
+.question:hover{
+    color: #f47c57;
+    cursor: pointer;
+}
+
+.down-arrow {
+    position: relative;
+    float: right;
+    height: 0.5rem;
+    width: auto;
+    transition: all 0.25s ease 0s;
 }
 
 .attribution{
     position: relative;
-   
+    top: 33rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (max-width: 1023px ){
+    .mobile{
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        margin-top: -20%;
+        align-items: center;
+    }
+    .desktop,.box{
+        display: none;
+    }
+    .box{
+        left: -30rem;
+    }
+    .card{
+        margin-top: 10%;
+    }
+    .list{
+        left: auto;
+        right: auto;
+        text-align: center;
+        margin-top: 10%;
+    }
+    h1{
+        margin-bottom: -1rem;
+        font-size: 1.5rem;
+    }
+    .attribution{
+        top: 25rem;
+    }
+    hr{
+        width: 20rem;
+    }
+    .answer{
+        width: 20rem;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .attribution{
+        top: 28.5rem;
+    }
 }
 
