@@ -1,5 +1,7 @@
 # Frontend Mentor - FAQ Accordion Card
 
+Visit: https://faqchallenge.netlify.app/
+
 ![Design preview for the FAQ Accordion Card coding challenge](./design/desktop-preview.jpg)
 
 ## Welcome! 👋
