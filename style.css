@@ -18,43 +18,11 @@ body{
     color: hsl(238, 29%, 16%); 
 }
 
-.card{
-    position: relative;
-    max-width: 80%;
-    background: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    border-radius: 30px;   
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: -12%;
-    margin-bottom: 5%; 
-    background-image: url(images/bg-pattern-desktop.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: -35rem -1.8rem;
-    box-shadow: 0 1px 25px 0 #4a4b5e;
+.desktop-image{
+    width:50%;
 }
 
-.box{
-    position: relative;
-    top: 21rem;
-    left: -34rem;
-    width: 15%;
-    z-index: 999;
-}
-
-.desktop{
-    position: absolute;
-    height: 55%;
-    width: 35%;
-    left: 7%; 
-    top: 38%;
-    display: block;
-}
-
-.mobile{
+.mobile,.background{
     display: none;
 }
 
@@ -69,14 +37,6 @@ hr{
     border-top: .5px solid;
 }
 
-.answer{
-    display: none;
-    margin-top: 0.6rem;
-    color: #444;
-    font-size: .875rem;
-    margin-bottom: 1rem;
-}
-
 .question{  
     font-size: 1rem;
     margin: 1.2rem auto 1.2rem auto;
@@ -86,6 +46,14 @@ hr{
 .question:hover{
     color: #f47c57;
     cursor: pointer;
+}
+
+.answer{
+    display: none;
+    margin-top: 0.6rem;
+    color: #444;
+    font-size: .875rem;
+    margin-bottom: 1rem;
 }
 
 .down-arrow {
@@ -101,6 +69,51 @@ hr{
     margin-right: auto;
 }
 
+@media screen and (min-width: 1023px){
+    .card{
+    background: white;
+    color: hsl(237, 12%, 33%);
+    width: 60%;
+    height: 70%;
+    border-radius: 30px;
+    position: absolute;
+    left: 20%;
+    top: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    overflow: hidden;
+    }
+    .background{
+        display: block;
+        width: 80%;
+        position: absolute;
+        left: -35%;
+        bottom: -10%;
+        overflow: hidden;
+    }
+    .list{
+        width: 50%;
+    }
+    .desktop{
+        width: 50%;
+        position: absolute;
+        left: -50px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .box{
+        position: relative;
+        z-index: 1;
+        width: 60%;
+        left: -6rem;
+        top: -9rem;
+    }
+    .attribution{
+        margin-bottom: -20%;
+    }
+}
+
 @media screen and (max-width: 1023px){
     .mobile{
         display: flex;
@@ -113,14 +126,20 @@ hr{
     .desktop,.box{
         display: none;
     }
-    .box{
-        left: -30rem;
-    }
     .card{
+        position: relative;
+        max-width: 80%;
+        background: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        border-radius: 30px;   
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 5%; 
         margin-top: 10%;
     }
     h1{
         text-align: center;
     }
 }
-
